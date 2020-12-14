@@ -26,7 +26,7 @@ namespace CloudAwesome.Pbi.SourceControl
 
                     if (Directory.Exists(settings.OutputFolder))
                     {
-                        Directory.Delete(settings.OutputFolder);
+                        Directory.Delete(settings.OutputFolder,true);
                     }
                     Directory.CreateDirectory(settings.OutputFolder);
 
